@@ -8,9 +8,16 @@
 
         while($teacher->have_posts()){
             $teacher->the_post();
-            echo "<h1>NIce</h1>";
-        }
+            ?>
 
+            <a href="<?php the_permalink(); ?>"><h2><small><?php the_field('academic_titles'); ?></small> <?php the_title(); ?></h2></a>
+            <p>Teaches: <?php the_field('subject'); ?></p>
+            <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt="">
+            <hr>
+
+            <?php 
+        }
+        wp_reset_postdata();
     ?>
 
 <?php get_footer(); ?>

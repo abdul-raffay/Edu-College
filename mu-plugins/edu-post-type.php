@@ -34,4 +34,8 @@
     }
     add_action('init', 'custom_post_type');
 
+
+    // Theme Feature Image Support
+    add_theme_support('post-thumbnails');
+
 ?>
