@@ -5,6 +5,7 @@
     function edu_files() {
         // CSS files
         wp_enqueue_style('edu_main_file', get_stylesheet_uri());
+        wp_enqueue_style('main_style', get_template_directory_uri() . '/css/style.css');
 
         // JS files
 

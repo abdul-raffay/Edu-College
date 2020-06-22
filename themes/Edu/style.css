@@ -6,3 +6,30 @@ Description: For Enrolling Student for specific Faculty
 Version: 1.0
 
 */
+
+div.menu {
+    background-color: black;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+div.menu ul {
+    margin:20px 0px 20px 0px !important;
+    list-style-type: none !important;
+    list-style: none !important;
+    list-style-image: none !important;
+    text-align:right !important;
+}
+
+div.menu li {
+    padding: 0px 20px 0px 0px;
+    display: inline;
+} 
+
+div.menu a { 
+    color:#FFFFFF;
+}

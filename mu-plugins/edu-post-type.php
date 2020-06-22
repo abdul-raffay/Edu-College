@@ -65,4 +65,14 @@
     // Theme Feature Image Support
     add_theme_support('post-thumbnails');
 
+
+    // Custom Navigation Menu
+    function edu_custom_menu(){
+        register_nav_menu("custom menu", array(
+            'my-custom-menu' => __( 'My Custom Menu' ),
+            'extra-menu' => __( 'Extra Menu' )
+        ));
+    }
+    add_action('init', 'edu_custom_menu');
+
 ?>
