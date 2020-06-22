@@ -31,6 +31,33 @@
             'menu_icon' => 'dashicons-welcome-learn-more'
         ));
 
+
+        // Course
+        register_post_type('course', array(
+            'public' => true,
+            'rewrite' => array(
+                'slug' => 'course'
+            ),
+            'show_ui' => true,
+            'labels' => array(
+                'name' => 'Courses',
+                'singular_name' => 'Course',
+                'add_new_item' => 'Add New Course',
+                'add_new' => 'Add Course',
+                'edit_item' => 'Edit Course',
+                'all_items' => 'All Courses', 
+                'name_admin_bar' => 'courses',
+                'view_item' => 'View Course',
+                'all_items' => 'All Courses',
+                'search_items' => 'Search Course',
+                'not_found' => 'No course found.'
+            ),
+            'supports' => array(
+                'title'
+            ),
+            'menu_icon' => 'dashicons-book'
+        ));
+
     }
     add_action('init', 'custom_post_type');
 
