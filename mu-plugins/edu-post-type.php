@@ -68,10 +68,7 @@
 
     // Custom Navigation Menu
     function edu_custom_menu(){
-        register_nav_menu("custom menu", array(
-            'my-custom-menu' => __( 'My Custom Menu' ),
-            'extra-menu' => __( 'Extra Menu' )
-        ));
+        register_nav_menu("main_menu", "Main Menu");
     }
     add_action('init', 'edu_custom_menu');
 

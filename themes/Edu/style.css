@@ -7,7 +7,7 @@ Version: 1.0
 
 */
 
-div.menu {
+div.custom-menu-class {
     background-color: black;
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -17,7 +17,7 @@ div.menu {
     padding-bottom: 15px !important;
 }
 
-div.menu ul {
+div.custom-menu-class ul {
     margin:20px 0px 20px 0px !important;
     list-style-type: none !important;
     list-style: none !important;
@@ -25,11 +25,11 @@ div.menu ul {
     text-align:right !important;
 }
 
-div.menu li {
+div.custom-menu-class li {
     padding: 0px 20px 0px 0px;
     display: inline;
 } 
 
-div.menu a { 
+div.custom-menu-class a { 
     color:#FFFFFF;
 }

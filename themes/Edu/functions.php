@@ -35,5 +35,17 @@
     add_action('init', 'only_admin_dashboard'); 
     
 
+    // Login Logout Menu
+    function my_wp_nav_menu_args( $args = '' ) {
+ 
+        if( is_user_logged_in() ) { 
+            $args['menu'] = 'Log Out Menu';
+        } else { 
+            $args['menu'] = 'My Menu';
+        } 
+            return $args;
+        }
+        add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
+
 
 ?>
