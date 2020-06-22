@@ -24,17 +24,25 @@
                 ));
 
             ?>
-            <p>Courses:<br>
-                <small>
-                    <?php 
-                        // print_r($course); 
-                        foreach($courses as $course){
-                            echo $course->post_name;
-                            ?> <br> <?php
-                        }
+            <?php 
+
+                if(is_page()){
                     ?>
-                </small>
-            </p>
+                    <p>Courses:<br>
+                        <small>
+                            <?php 
+                                // print_r($course); 
+                                foreach($courses as $course){
+                                    echo $course->post_name;
+                                    ?> <br> <?php
+                                }
+                            ?>
+                        </small>
+                    </p>
+                    <?php
+                }
+
+            ?>
             <?php
         }
 

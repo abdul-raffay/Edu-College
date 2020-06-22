@@ -2,13 +2,10 @@
 
     <?php
 
-        $teacher = new WP_Query(array(
-            'post_type' => 'teacher'
-        ));
+        while(have_posts()){
+            the_post();
 
-        while($teacher->have_posts()){
-            $teacher->the_post();
-            echo "<h1>NIce</h1>";
+            the_title();
         }
 
     ?>
